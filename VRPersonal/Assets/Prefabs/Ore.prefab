@@ -412,7 +412,10 @@ MonoBehaviour:
   - {fileID: 8160226484593353407}
   - {fileID: 6010354199844989797}
   - {fileID: 7093252234582958628}
-  coloring: {fileID: 2100000, guid: b14ce1346bc08ad49932f806a136f819, type: 2}
+  coloring:
+  - {fileID: 2100000, guid: b14ce1346bc08ad49932f806a136f819, type: 2}
+  - {fileID: 2100000, guid: 0b1f98137876d604186cb0603c012664, type: 2}
+  - {fileID: 2100000, guid: 8e1eee9148411204199aed4525121c11, type: 2}
 --- !u!1 &8033719247448658288
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,13 +6,14 @@ public class SetMaterial : MonoBehaviour
 {
 
     public GameObject[] metals;
-    public Material coloring;
+    public Material[] coloring;
     // Start is called before the first frame update
     void Start()
     {
+        int randomMaterial = Random.Range(0, coloring.Length);
         for(int i = 0; i < metals.Length; i++)
         {
-            metals[i].GetComponent<MeshRenderer>().material = coloring;
+            metals[i].GetComponent<MeshRenderer>().material = coloring[randomMaterial];
         }
     }
 
