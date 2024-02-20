@@ -7,13 +7,19 @@ public class SetMaterial : MonoBehaviour
 
     public GameObject[] metals;
     public Material[] coloring;
+    public Material currentColor;
+    public bool piece;
     // Start is called before the first frame update
     void Start()
     {
-        int randomMaterial = Random.Range(0, coloring.Length);
-        for(int i = 0; i < metals.Length; i++)
+        if (!piece)
         {
-            metals[i].GetComponent<MeshRenderer>().material = coloring[randomMaterial];
+            int randomMaterial = Random.Range(0, coloring.Length);
+            for (int i = 0; i < metals.Length; i++)
+            {
+                metals[i].GetComponent<MeshRenderer>().material = coloring[randomMaterial];
+            }
+            currentColor = coloring[randomMaterial];
         }
     }
 
